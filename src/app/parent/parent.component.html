@@ -1,0 +1,27 @@
+<h1> Movie </h1>
+<input [(ngModel)]="numbermovie"><br><br>
+<button (click)="onClicked()"><h1>Click!!</h1></button><br><br>
+
+<table style="width:60%">
+    <tr>
+        <td><b>Name</b></td>
+        <td><b>Type</b></td>
+        <td><b>Price</b></td>
+        <td><b>Movieid</b></td>
+    </tr>
+    <tr>
+        <td>{{ Mov.NameMovie }}</td>
+        <td>{{ Mov.TypeMovie }}</td>
+        <td>{{ Mov.MoviePrice }}</td>
+        <td>{{ Mov.Movieid }}</td>
+    </tr>
+</table>
+
+<style>
+    table, th, td {
+        border: 2px solid rgb(13, 124, 221);
+        border-collapse: collapse;
+        background-color: #76e6f2;
+        text-align: center;
+    }
+</style>
